@@ -90,86 +90,7 @@
 
 
     
-     <script>
-        const tasks = [
-        { id: 1, completed: true, title: "Wash car", descriptions: "My car is filthy and needs its annual clean", dueDate: "10/05/2025", createdOn: "05/06/2025"}, 
-        { id: 2, completed: true, title: "Mow the lawn", descriptions: "Attempt to mow the lawn without without getting stuck talking to neighbar for 3 hours", dueDate: "10/05/2025", createdOn: "05/06/2025"}, 
-        { id: 3, completed: false, title: "Find out why honey never expires", descriptions: "How is possible? ", dueDate: "10/05/2025", createdOn: "05/06/2025"},
-        { id: 4, completed: false, title: "Prove the earth isn't flat", descriptions: "Prove flat earthers wrong once and for all!", dueDate: "10/05/2025", createdOn: "05/06/2025"}, 
-        { id: 5, completed: false, title: "This is newly added tasks", descriptions: "some description here", dueDate: "22/07/2025", createdOn: "30/06/2025"}, 
-    ]
 
-
-
-
-
- //--------------------- Get tasks----------------------------------
-    function displayTasks() {
-        const toDoList = document.getElementById("toDoList");
-        const completedList = document.getElementById("completedList");
- 
-        function formatTask(task) {
-           const li = document.createElement("li");
-           li.classList.add("p-3", "mt-2", "shadow-sm", "card");
-           li.innerHTML = task.completed ?
-          // how are we displaying the completed tasks?
-           `
-             <div class="d-flex justify-content-between align-items-start">
-                <h4 class="col-11 text-decoration-line-through opacity-50">${task.title}</h4>
-                <button type="button" class="btn-close delete" aria-lable="Close"></button>
-            </div>
-            <p class="text-decoration-line-through opacity-50">${task.description}</p>
-            <p class="text-decoration-line-through opacity-50"><strong>Due: </strong>${task.dueDate}</p>
-            <div class="d-flex justify-content-between align-items-end">
-                <div>
-                    <button class="btn btn-dark shadow-sm notDone">Not done</button>
-                </div>
-                <p class="m-0 text-decoration-line-through opacity-50"><strong>Created on: </strong>${task.createOn}</p>
-            </div>
-              `
-           : 
-           // how are we displaying the tasks that aren't yet completed?
-           `
-            <div class="d-flex justify-content-between align-items-start">
-                <h4 class="col-11">${task.title}</h4>
-                <button type="button" class="btn-close delete" aria-lable="Close"></button>
-            </div>
-            <p>${task.description}</p>
-            <p><strong>Due: </strong>${task.dueDate}</p>
-            <div class="d-flex justify-content-between align-items-end">
-                <div>
-                    <button class="btn btn-dark shadow-sm edit">Edit</button>
-                    <button class="btn btn-dark shadow-sm done">Done</button>
-                </div>
-                <p class="m-0"><strong>Created on: </strong>${task.createdOn}</p>
-            </div>
-           `;
-           return li;
-        }
-
-
-        toDoList.innerHTML ="";
-        completedList.innerHTML ="";
-
-        tasks.forEach(task => {
-            task.completed ? completedList.appendChild(formatTask(task)) : toDoList.appendChild(formatTask(task))
-        });
-    }
-    
-    window.addEventListener("DOMContentLoaded",() => {
-         displayTasks();
-    });
-
-
-
- 
-        task.push(taskDetails);
-        displayTasks(); // Run this at the end of every task function to both rest the form and refresh the task list
-    
-    const taskForm = document.getElementById("taskForm");
-
-
-</script>
  
 
 
@@ -218,7 +139,7 @@
 <!-- ↓ Edit Task Modal ↓ -->
 
 
-    <script src="./js/API.js"></script>
+    <script src="./frontend/js/API.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
