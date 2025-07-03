@@ -26,7 +26,7 @@ app.use(cors('*'));  // Enables use of CORS - * means every domain is now allowe
     try {
         mongoose.set("autoIndex", false);
 
-        await mangoose.connect(process.env.MONGO_URI);
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("✅ MongoDB connected!");
 
         await Task.syncIndexs();
