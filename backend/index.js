@@ -13,6 +13,7 @@ const app = express(); // Using Express.js to power the app
 
 
 
+
 // ---------------------------- ↓ MIDDLEWARE SETUP ↓ -----------------------------
 
 app.use(express.json()); // Uses express in  JSON format
