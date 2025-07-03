@@ -21,7 +21,7 @@ nav, footer {
     height: auto; 
     background-size: cover;
     background-position: center center;
-    background-image: url(/frontend/images/homeBackround.jpg);
+    background-image: url(../images/homeBackround.jpg);
     background-blend-mode: overlay;
     background-color: blueviolet;
 }
