@@ -1,10 +1,8 @@
 // ------------------ ↓ GLOBAL VARIABLES (ALLOWED TO BE USED IN EVERY FUNCTION ONWARDS) ↓ -------
 
-const { error } = require("console");
 
 const taskForm = document.getElementById("taskForm");
-const editTaskForm = document.getElementById("editTaskForm");
-const url = "http://localhost:3000";
+const url = "https://todoapp-323m.onrender.com";
 
 
 // ------------------ ↓ GENERAL FUNCTIONS ↓ -------
