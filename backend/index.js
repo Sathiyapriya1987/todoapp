@@ -36,7 +36,7 @@ app.use(cors('*'));  // Enables use of CORS - * means every domain is now allowe
         await mongoose.connect(process.env.MONGO_URI);
         console.log("✅ MongoDB connected!");
 
-        await Task.syncIndexs();
+        await Task.syncIndexes();
         console.log("✅ Indexes created!");
         
         app.listen(port, () => {
@@ -47,6 +47,9 @@ app.use(cors('*'));  // Enables use of CORS - * means every domain is now allowe
         process.exit(1);
     }
 })();     
+
+
+
 
 
 
