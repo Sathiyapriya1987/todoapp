@@ -192,7 +192,7 @@ completedList.addEventListener("click", (event) => {
                 return alert("All fields requird!");
             }
             
-            const response = await fetch(`${url}tasks/todo`, {
+            const response = await fetch(`${url}/tasks/todo`, {
                method: "POST",
                headers: {
                 "Content-Type": "application/json"
@@ -209,7 +209,7 @@ completedList.addEventListener("click", (event) => {
             displayTasks();
 
         } catch (error) {
-            conaole.error("Error:", error);
+            console.error("Error:", error);
         }
     }
 
