@@ -21,7 +21,7 @@ nav, footer {
     height: auto; 
     background-size: cover;
     background-position: center center;
-    background-image: url(../images/3129576-uhd_3840_2160_30fps.mp4);
+    background-image: url(../images/images.jfif);
     background-blend-mode: overlay;
     background-color: blueviolet;
 }
@@ -35,8 +35,8 @@ nav, footer {
     background-color: var(--primary);
 } 
 
-.pageNotReady {
-    background-color: white;
+.pricing {
+    background-color: rgb(25, 131, 245);
     height: 66vh;
 }
 
