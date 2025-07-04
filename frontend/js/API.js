@@ -75,7 +75,7 @@ completedList.addEventListener("click", (event) => {
 
 
 // Editing the Task
- toDoList.addEventListener("click", (event) =>{
+ toDoList.addEventListener("click", (event) => {
      if (event.target.classList.contains("edit")) {
         const taskId = event.target.getAttribute("data-id");
         const taskTitle  = event.target.getAttribute("data-title");
@@ -250,11 +250,11 @@ async function taskNotCompleted(taskId) {
             headers: {
                 "Content-Type": "application/json"
             },
-            body:JSON.stringify({ completed: false })
+            body: JSON.stringify({ completed: false })
         });
 
         if (!response.ok) {
-            throw new Error(`Failed to set the task to not complete: ${response.status}`)
+            throw new Error(`Failed to set the task to not complete: ${response.status}`);
         }
         
         const data = await response.json();
@@ -311,7 +311,7 @@ async function deleteTask(taskId) {
             body: JSON.stringify(updateDetails)
         });
 
-        if (response.ok) {
+        if (!response.ok) {
             throw new Error(`Failed to edit task: ${response.status}`);
         }
 
@@ -324,38 +324,3 @@ async function deleteTask(taskId) {
     }
     
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

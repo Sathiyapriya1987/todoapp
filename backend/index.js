@@ -191,7 +191,7 @@ app.delete('/tasks/delete/:id', async (req, res) => {
 
 
     // To edit the task ↓
-    app.put('/tasks/update/:id', async (req) => {
+    app.put('/tasks/update/:id', async (req, res) => {
         try {
             const taskId = req.params.id;
             const { title, description, dueDate } = req.body;
