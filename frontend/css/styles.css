@@ -1,11 +1,11 @@
 :root {
-    --primary: rgba(135, 238, 66, 0.735);
+    --primary: rgba(88, 11, 254, 0.735);
     --primaryHover: rgb(35, 202, 127);
 }
 
 nav, footer {
     color: white;
-    background-color: rgb(110, 103, 135);
+    background-color: rgb(41, 203, 52);
 }
 
 .nav-link {
