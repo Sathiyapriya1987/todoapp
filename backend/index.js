@@ -20,7 +20,7 @@ app.use(express.json()); // Uses express in  JSON format
 
 const corsOptions = {
     origin: 'https://todoapp-blue-alpha.vercel.app',
-    methods: [ "GET", "POST", "PUT", "PATCH", "DELETE"],
+    methods: [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
     Credentials: true
 };
 app.use(cors('*'));  // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
