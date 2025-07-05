@@ -38,7 +38,7 @@ sortButton.addEventListener("change",() => {
    const completedList = document.getElementById("completedList");
 
 
-// To create a task on from submission
+// To create a task on form submission
 taskForm.addEventListener("submit", (event) => {
     event.preventDefault();
     createNewTask();
@@ -160,8 +160,8 @@ completedList.addEventListener("click", (event) => {
            return li;
         }
 
-        toDoList.innerHTML ="";
-        completedList.innerHTML ="";
+        toDoList.innerHTML = "";
+        completedList.innerHTML = "";
 
         const tasks = data;
         
@@ -292,7 +292,6 @@ async function deleteTask(taskId) {
 
 
 
-
 // Enables editing of the task
  async function editTask(taskId) {
 
@@ -322,5 +321,4 @@ async function deleteTask(taskId) {
     } catch (error) {
         console.error("Error:", error);
     }
-    
- }
+}
