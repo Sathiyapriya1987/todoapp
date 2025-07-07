@@ -16,7 +16,7 @@
         <a class="navbar-brand" href="./index.html">
             <img src="./images/hamburger-svgrepo-com.svg" alt="logo" height="50px" width="auto">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navebarNav" aria-expanded="false" aria-lable="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <img src="./images/hamburger-menu-svgrepo-com.svg" alt="Hamburger Icon" height="40px" width="auto">
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,7 +62,7 @@
                    <button type="submit" class="btn btn-dark shadow-sm px-5">Create Task</button>
                </form>
                <div class="d-flex align-items-center gap-3 mb-5">
-                   <lable for="sortSelect">Sort By:</lable>
+                   <label for="sortSelect">Sort By:</label>
                    <select id="sortSelect" class="form-select w-auto shadow-none">
                            <option value="default" selected>default</option>
                            <option value="dueDate">Due Date</option>
@@ -76,7 +76,7 @@
                </div>
                <div class="col-12 col-lg-6">
                     <h2>Completed</h2>
-                    <ul id="completedList" class="list-group">
+                    <ul id="completedList" class="list-group"></ul>
                   </div>
                </div>
             </div>
@@ -115,15 +115,15 @@
 
 <!-- ↓ Edit Tasks Model - pops up when needed ↓ -->
 
-<div class="modal fade" id="editTaskwindow" tabindex="-1" aria-labelledby="editTaskmodelLable" aria-hidden="true">
+<div class="modal fade" id="editTaskwindow" tabindex="-1" aria-labelledby="editTaskmodellabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="editTaskmodelLable">Edit Task</h1>
+                <h1 class="modal-title fs-5" id="editTaskmodellabel">Edit Task</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <from id="editTaskForm" class="mb-5">
+                    <form id="editTaskForm" class="mb-5">
                         <input id="editTaskName" placeholder="Task Name" class="mb-2 form-control shadow-sm" type="text">
                         <textarea id="editTaskDescription" placeholder="Task Description" rows="7" class="mb-3 form-control shadow-sm"></textarea>
                         <input id="editDueDate" placeholder="Task Name" class="mb-3 form-control shadow-sm" type="date">
